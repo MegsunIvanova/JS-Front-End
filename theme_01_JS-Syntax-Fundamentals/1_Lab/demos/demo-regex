@@ -1,0 +1,7 @@
+let pattern = /^\#[A-Za-z]+$/;
+
+console.log(pattern.test("#example"));
+
+
+
+console.log ([..."#special afadaeagagg sghfshf".matchAll(pattern)]);
