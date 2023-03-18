@@ -1,0 +1,8 @@
+.text {
+  background-color: red;
+}
+
+.typography {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
