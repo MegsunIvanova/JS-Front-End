@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <h1>Test</h1>
+    <script>
+      //Asynchronous Programming
+      console.log("First Hello.");
+
+      //allows us to run a function once after the interval of time:
+      //   setTimeout(() => {
+      //     console.log("Second Hello!");
+      //   }, 2000); //2SECONDS = 2000
+
+      //allows us to run a function repeatedly, starting after the interval of time,
+      // then repeating continuously at that interval
+      setInterval(() => {
+        console.log("Second Hello!");
+      }, 2000); //2000 ms
+
+      console.log("Third Hello!");
+    </script>
+  </body>
+</html>

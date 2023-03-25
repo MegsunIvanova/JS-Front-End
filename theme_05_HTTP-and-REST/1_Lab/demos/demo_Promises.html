@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <h1>Test</h1>
+    <script>
+        new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve({ id: 1, name: "Kiril" });
+          }, 1000);
+        }).then((res) => {
+          console.log(res);
+        })
+        .catch((err) => {
+            console.error(err);
+        })
+        .finally(() => {
+            console.log("Goes here anyway!")
+        });
+
+    //   new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //       reject("Something went wrong!");
+    //     }, 2000);
+    //   })
+    //     .then((res) => {
+    //       console.log(res);
+    //     })
+    //     .catch((err) => {
+    //       console.log(err);
+    //     });
+    </script>
+  </body>
+</html>
