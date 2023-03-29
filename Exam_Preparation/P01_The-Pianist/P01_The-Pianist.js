@@ -1,4 +1,4 @@
-function thePianist(input) {
+function pianist(input) {
     let number = input.splice(0, 1)[0];
     let piecesLines = input.splice(0, number);
     let commandsLines = input;
@@ -54,7 +54,7 @@ function thePianist(input) {
 
 }
 
-thePianist(
+pianist(
     [
         '3',
         'Fur Elise|Beethoven|A Minor',
