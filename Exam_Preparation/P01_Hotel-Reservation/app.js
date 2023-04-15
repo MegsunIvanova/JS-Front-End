@@ -75,7 +75,7 @@ function solve() {
         reservationListItem.remove();
         otherDomSelectors.nextBtn.removeAttribute("disabled");
         otherDomSelectors.verificationHeader.classList.add("reservation-confirmed")
-        otherDomSelectors.verificationHeader.textContent = "Confirmed";
+        otherDomSelectors.verificationHeader.textContent = "Confirmed.";
     }
 
     function cancelReservationHandler() {
@@ -83,7 +83,7 @@ function solve() {
         reservationListItem.remove();
         otherDomSelectors.nextBtn.removeAttribute("disabled");
         otherDomSelectors.verificationHeader.classList.add("reservation-cancelled")
-        otherDomSelectors.verificationHeader.textContent = "Cancelled";
+        otherDomSelectors.verificationHeader.textContent = "Cancelled.";
     }
 
     function isValidPeriod(dateIn, dateOut) {
